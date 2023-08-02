@@ -1,9 +1,0 @@
-{
-  "name": "fullappp",
-  "private": true,
-  "pnpm": {
-    "packages": [
-      "packages/*"
-    ]
-  }
-}

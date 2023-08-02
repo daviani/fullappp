@@ -1,2 +1,39 @@
-.DS_STORE
-.idea
+### Node.js
+
+# Logs
+logs
+*.log
+
+# npm
+*.npmrc
+
+# devDependencies
+node_modules/.bin
+
+### Python
+
+# Virtualenv
+.venv
+
+### TypeScript
+
+# Compiled files
+*.js
+*.d.ts
+
+### Other
+
+# Build artifacts
+dist
+
+# Temp files
+*.tmp
+
+# Ignored directories
+node_modules
+.git
+.gitignore
+
+# Workspaces
+packages/client/node_modules
+packages/api/node_modules

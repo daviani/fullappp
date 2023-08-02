@@ -1,0 +1,24 @@
+{
+  "name": "fullappp",
+  "version": "1.0.0",
+  "private": true,
+  "pnpm": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "install:all": "pnpm recursive install",
+    "clean": "pnpm recursive exec -- rm -rf node_modules && pnpm run clean-root",
+    "clean-root": "rm -rf node_modules",
+    "frontend:start": "cd packages/client && cross-env PORT=8000 react-scripts start",
+    "backend:start": "cd packages/api && node dist/index.js",
+    "start": "pnpm frontend:start & pnpm backend:start"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "react-scripts": "5.0.1"
+  }
+}
