@@ -16,6 +16,7 @@
     "start": "pnpm frontend:start & pnpm backend:start"
   },
   "devDependencies": {
+
     "cross-env": "^7.0.3"
   },
   "dependencies": {
